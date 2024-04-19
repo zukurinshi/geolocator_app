@@ -67,6 +67,8 @@ class _WeatherHomeState extends State<WeatherHome> {
         return 'images/cloudy.png';
       case 'scattered clouds':
         return 'images/cloudy.png';
+      case 'overcast clouds':
+        return 'images/cloudy.png';
       default:
         return 'null';
     }
