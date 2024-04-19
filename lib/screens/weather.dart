@@ -15,8 +15,8 @@ class WeatherHome extends StatefulWidget {
 
 class _WeatherHomeState extends State<WeatherHome> {
   final WeatherFactory _wf = WeatherFactory(OPENWEATHER_API_KEY);
-
   Weather? _weather;
+
   // Position? _currentLocation;
   String _currentAddress = "";
 
@@ -54,6 +54,10 @@ class _WeatherHomeState extends State<WeatherHome> {
   String getWeatherImage(String weatherDescription) {
     switch (weatherDescription.toLowerCase()) {
       case 'thunderstorm':
+        return 'images/thunderstorm.png';
+      case 'light thunderstorm':
+        return 'images/thunderstorm.png';
+      case 'heavy thunderstorm':
         return 'images/thunderstorm.png';
       case 'rain':
         return 'images/rain.png';
